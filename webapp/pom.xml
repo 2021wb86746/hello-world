@@ -1,4 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" 
+<project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
                              https://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -15,11 +15,10 @@
   <artifactId>webapp</artifactId>
   <packaging>war</packaging>
   <name>Webapp</name>
-  <description>Updated web module compatible with Java 21 and Maven 3.9.11.</description>
+  <description>Web module compatible with Java 17.</description>
 
   <build>
     <finalName>${project.artifactId}</finalName>
-
     <plugins>
       <plugin>
         <groupId>org.eclipse.jetty</groupId>
@@ -29,8 +28,7 @@
   </build>
 
   <dependencies>
-
-    <!-- Include the server module -->
+    <!-- Link to server logic -->
     <dependency>
       <groupId>com.example.maven-project</groupId>
       <artifactId>server</artifactId>
@@ -43,7 +41,6 @@
       <artifactId>jakarta.servlet-api</artifactId>
       <scope>provided</scope>
     </dependency>
-
     <dependency>
       <groupId>jakarta.servlet.jsp</groupId>
       <artifactId>jakarta.servlet.jsp-api</artifactId>
